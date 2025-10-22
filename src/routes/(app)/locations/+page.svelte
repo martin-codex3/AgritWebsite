@@ -1,5 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
+	import { slide } from 'svelte/transition';
 
 	let mapContainer;
 
@@ -15,14 +16,12 @@
 </script>
 
 
-<div class="wrapper px-5">
+<section transition:slide class="wrapper px-5">
 	<div>
 		<h1 class="text-3xl font-extrabold text-center capitalize py-20">
 			locations
 		</h1>
 	</div>
 
-	<div class="h-[700px] rounded-3xl mb-10 z-0" bind:this={mapContainer}>
-
-	</div>
-</div>
+	<div class="h-[700px] rounded-3xl mb-10 z-0 mt-7" bind:this={mapContainer}></div>
+</section>

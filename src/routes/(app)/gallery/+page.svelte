@@ -6,13 +6,15 @@
 	import School from "$lib/assets/images/School.jpg"
 	import Happy from "$lib/assets/images/Happy.jpg"
 
+	import { fade } from 'svelte/transition';
+
 	const allImages = $state([
 		FoodSecurity, Monitor, Farming, Happy, School, Ground
 	])
 </script>
 
 
-<div class="wrapper px-5 pb-20">
+<section transition:fade class="wrapper px-5 pb-20">
 	<div>
 		<h1 class="text-3xl font-extrabold text-center capitalize py-20">Gallery</h1>
 	</div>
@@ -27,4 +29,4 @@
 			</div>
 		{/each}
 	</div>
-</div>
+</section>

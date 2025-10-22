@@ -1,10 +1,10 @@
 <script>
 	import AboutUsImage from "$lib/assets/images/School.jpg"
-	import { fade } from 'svelte/transition';
+	import { slide } from 'svelte/transition';
 </script>
 
 <section>
-	<div transition:fade class="relative h-96 bg-center bg-cover w-full" style="background-image: url({AboutUsImage})">
+	<div transition:slide class="relative h-96 bg-center bg-cover w-full" style="background-image: url({AboutUsImage})">
 		<div class="absolute inset-o h-full bg-black/50 w-full items-center
 		flex content-center justify-center">
 			<h1 class="text-center font-extrabold text-6xl capitalize text-white">about us</h1>

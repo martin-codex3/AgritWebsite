@@ -1,14 +1,16 @@
 <script>
 	import { enhance } from '$app/forms';
-	let amount = $state(0)
+	import { slide } from 'svelte/transition';
 
+	let amount = $state(0)
 	const toggleAmount = (selectedAmount) => {
 		amount = selectedAmount
 		console.log(amount);
 	}
 
 </script>
-<div class="wrapper px-5">
+
+<section transition:slide class="wrapper px-5">
 	<div>
 		<h1 class="text-3xl font-extrabold text-center capitalize py-20">donate to AGLIT</h1>
 	</div>
@@ -106,4 +108,4 @@
 			</h1>
 		</div>
 	</div>
-</div>
+</section>
