@@ -1,3 +1,18 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+@plugin "tailwindcss-motion";
+
+/* the main theme colors here */
+@theme {
+    --font-primary-main: "Inter";
+    --color-primary-main-color: #f8f9fa;
+    --color-primary-blue: #1967d2;
+    --color-primary-gray: #d1d1d1;
+    --color-primary-green: #008000;
+}
+
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+}
