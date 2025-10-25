@@ -35,11 +35,6 @@
 			</li>
 
 			<li class="">
-				<a href="/" class="{page.url.pathname === '/' ? 'bg-primary-green text-green-100' : ''}
-					font-semibold capitalize hover:bg-primary-green hover:text-white py-6 px-4">partners</a>
-			</li>
-
-			<li class="">
 				<a href="/locations" class="{page.url.pathname === '/locations' ? 'bg-primary-green text-green-100' : ''}
 					font-semibold capitalize hover:bg-primary-green hover:text-white py-6 px-4">locations</a>
 			</li>

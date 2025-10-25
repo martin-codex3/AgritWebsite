@@ -1,5 +1,10 @@
 <script>
 	import IntroductionImage from "$lib/assets/images/FoodSecurity.jpg"
+	import { goto } from '$app/navigation';
+
+	const handleNavigate = () => {
+		goto("/about-us")
+	}
 </script>
 
 <div class="mt-14">
@@ -31,7 +36,7 @@
 			</div>
 
 			<div>
-				<button class="w-44 rounded-full cursor-pointer bg-primary-green
+				<button onclick={handleNavigate} class="w-44 rounded-full cursor-pointer bg-primary-green
 				 py-2 lg:py-4 text-lg capitalize text-white">
 					<span>read more</span>
 					<span class="icon-[material-symbols--arrow-right-alt]"></span>
